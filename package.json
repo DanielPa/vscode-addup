@@ -3,8 +3,9 @@
 	"displayName": "AddUp",
 	"description": "Add up numbers in clipboard and past the sum.",
 	"version": "0.0.1",
+	"publisher": "DanielPa",
 	"engines": {
-		"vscode": "^1.40.0"
+		"vscode": "^1.43.0"
 	},
 	"categories": [
 		"Other"
