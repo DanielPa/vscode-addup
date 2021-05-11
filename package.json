@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.addUp"
+		"onCommand:addUp.clipboard"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.addUp",
+				"command": "addUp.clipboard",
 				"title": "Add up clipboard"
 			}
 		]
