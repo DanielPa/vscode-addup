@@ -30,8 +30,13 @@ function activate(context) {
 			let sum = 0
 
 			lines.forEach(line => {
-				sum += parseInt(line)
-			});
+				
+					let intVal = parseInt(line)
+					if (intVal > 0) {
+						sum += intVal
+					}
+				}
+			);
 			
 			vscode.window.activeTextEditor.edit(editBuilder => {
 				editBuilder.insert(vscode.window.activeTextEditor.selection.active, sum.toString())
@@ -41,7 +46,6 @@ function activate(context) {
 
 	context.subscriptions.push(disposable);
 }
-exports.activate = activate;
 
 // this method is called when your extension is deactivated
 function deactivate() {}
